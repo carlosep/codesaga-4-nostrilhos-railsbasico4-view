@@ -1,6 +1,10 @@
 # OptionsController
 #
 class OpinionsController < ApplicationController
+  def index
+    @opinions = Opinion.all
+  end
+
   def new
     @opinion = Opinion.new
   end
